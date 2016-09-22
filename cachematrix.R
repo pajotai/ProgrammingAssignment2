@@ -3,8 +3,8 @@
 ## then calculating cacheSolve(cacheMatrix). The first cacheSolve() call also caches the result for subsequent calls 
 
 
-## Function that creates an "enriched", matrix from a regular one, able to cache its inverse.
-##It contains four functions: get/set matrix, get/set inverse matrix.
+## Function that creates an "enriched" matrix from a regular one, able to cache its inverse.
+## It contains four functions: get/set matrix, get/set inverse matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Function that calculates the inverse of a matrix.
-##It first checks if the result is already available in the cache, avoiding re-calculation.
+## It first checks if the result is already available in the cache, avoiding re-calculation.
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
